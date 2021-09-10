@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi</title>
+</head>
+<body>
+<input type="text" id="dauvao">
+<select name= "" id="select1">
+   <option volue="a">VND</option>
+   <option volue="b">USD</option>
+</select>
+<select name= "" id="select2">
+  <option volue="a">VND</option>
+  <option volue="b">USD</option>
+</select>
+<button onclick="aaa() ">covert</button>
+<script>
+ function aaa()  {
+  let giatrivao=document.getElementById('dauvao').value;
+  let select1 =document.getElementById('select1').value;
+  let select2 =document.getElementById('select2').value;
+  if (select1 == select2) {
+         alert(giatrivao);
+     }
+  if (select1 == "a" && select2 =="b") {
+      alert(giatrivao/24000);
+  }
+
+}
+</script>
+</body>
+</html>
